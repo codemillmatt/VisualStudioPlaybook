@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="VisualStudioPlaybookLibrary">
+      <HintPath>..\..\VisualStudioPlaybookLibraries\Mod3Recipe13\VisualStudioPlaybookLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
