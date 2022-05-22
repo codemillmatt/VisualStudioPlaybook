@@ -11,7 +11,7 @@
 
         public void Rate(int rating)
         {
-            if (rating < 1 || rating > 5)
+            if (rating < 0 || rating > 5)
                 throw new ArgumentException();
         }
 

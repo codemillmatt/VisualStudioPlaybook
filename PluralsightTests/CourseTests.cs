@@ -12,7 +12,7 @@ namespace Pluralsight.Tests
     public class CourseTests
     {
         [TestMethod()]
-        public void ChangePlayStatusTest()
+        public void ChangeToPlayStatusTest()
         {
             Course psCourse = new Course();
 
@@ -22,11 +22,39 @@ namespace Pluralsight.Tests
         }
 
         [TestMethod()]
-        public void RateTest()
+        public void ChangeToPauseStatusTest()
+        {
+            Course psCourse = new Course();
+
+            WatchStatus newWatchStatus = psCourse.ChangePlayStatus(WatchStatus.Paused);
+
+            Assert.AreEqual(WatchStatus.Paused, newWatchStatus);
+        }
+
+        [TestMethod()]
+        public void ChangeToStopStatusTest()
+        {
+            Course psCourse = new Course();
+
+            WatchStatus newWatchStatus = psCourse.ChangePlayStatus(WatchStatus.Stopped);
+
+            Assert.AreEqual(WatchStatus.Stopped, newWatchStatus);
+        }
+
+        [TestMethod()]
+        public void RateToLowExceptionTest()
         {
             Course psCourse = new Course();
 
             Assert.ThrowsException<ArgumentException>(() => psCourse.Rate(0));
+        }
+
+        [TestMethod()]
+        public void RateToHighExceptionTest()
+        {
+            Course psCourse = new Course();
+
+            Assert.ThrowsException<ArgumentException>(() => psCourse.Rate(6));
         }
     }
 }
