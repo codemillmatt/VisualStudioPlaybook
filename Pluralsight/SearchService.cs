@@ -16,7 +16,7 @@ namespace Pluralsight
             if (searchTerm.Contains("visual studio", StringComparison.OrdinalIgnoreCase))
                 return new Course[] { new Course { CourseName = "Visual Studio 2022 Playbook" } };
             else
-                return new Course[] { new Course { CourseName = "Demonstrating the Business Value of Power Apps" } };
+                return new Course[] { };
         }
     }
 }
