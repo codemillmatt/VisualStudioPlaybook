@@ -7,5 +7,5 @@ SolarSystem solarSystem = new();
 
 foreach (var planet in solarSystem.Planets)
 {
-        Console.WriteLine($"Welcome to {planet.Name}");
+    Console.WriteLine($"Welcome to {planet.Name}");
 }
