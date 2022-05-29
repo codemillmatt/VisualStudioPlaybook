@@ -14,7 +14,7 @@ namespace PlanetsConsole
         {
             Planets = new List<Planet>()
             {
-                new Planet() { Name = "Mercury", IsPlanet = true },
+                new Planet() { Name = "Mercury", IsPlanet = true, YearLength = 88, DistanceFromSun = 43366000, Weight = 0.4 },
                 new Planet() { Name = "Venus", IsPlanet = true },
                 new Planet() { Name = "Earth", IsPlanet = true },
                 new Planet() { Name = "Mars", IsPlanet = true },

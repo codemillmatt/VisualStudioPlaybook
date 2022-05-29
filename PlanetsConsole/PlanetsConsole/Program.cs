@@ -9,12 +9,3 @@ foreach (var planet in solarSystem.Planets)
 {
     Console.WriteLine($"Welcome to {planet.Name}");
 }
-
-try
-{
-    solarSystem.AddDwarfPlanet(null);
-}
-catch (ArgumentNullException)
-{
-    Console.WriteLine("I told you not to make it null!");
-}
