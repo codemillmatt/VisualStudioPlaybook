@@ -26,9 +26,12 @@ namespace PlanetsConsole
             };
         }
 
-        public void AddDwarfPlanet(string name)
+        public void AddDwarfPlanet(string dwarfPlanetName)
         {
-            Planets.Add(new Planet { Name = name, IsPlanet = false });
+            if (string.IsNullOrEmpty(dwarfPlanetName))
+                throw new ArgumentNullException(nameof(dwarfPlanetName));
+
+            Planets.Add(new Planet { Name = dwarfPlanetName, IsPlanet = false });
         }
     }
 }
