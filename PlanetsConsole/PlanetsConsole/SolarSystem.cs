@@ -15,14 +15,14 @@ namespace PlanetsConsole
             Planets = new List<Planet>()
             {
                 new Planet() { Name = "Mercury", IsPlanet = true, YearLength = 88, DistanceFromSun = 43366000, Weight = 0.4 },
-                new Planet() { Name = "Venus", IsPlanet = true },
-                new Planet() { Name = "Earth", IsPlanet = true },
-                new Planet() { Name = "Mars", IsPlanet = true },
-                new Planet() { Name = "Jupiter", IsPlanet = true },
-                new Planet() { Name = "Saturn", IsPlanet = true },
-                new Planet() { Name = "Uranus", IsPlanet = true },
-                new Planet() { Name = "Neptune", IsPlanet = true },
-                new Planet() { Name = "Pluto", IsPlanet = false }
+                new Planet() { Name = "Venus", IsPlanet = true, YearLength = 102 },
+                new Planet() { Name = "Earth", IsPlanet = true, YearLength = 365 },
+                new Planet() { Name = "Mars", IsPlanet = true, YearLength = 1022 },
+                new Planet() { Name = "Jupiter", IsPlanet = true, YearLength = 6423 },
+                new Planet() { Name = "Saturn", IsPlanet = true, YearLength = 3321 },
+                new Planet() { Name = "Uranus", IsPlanet = true, YearLength = 7781 },
+                new Planet() { Name = "Neptune", IsPlanet = true, YearLength = 6612 },
+                new Planet() { Name = "Pluto", IsPlanet = false, YearLength = 102881 }
             };
         }
 
