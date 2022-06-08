@@ -8,4 +8,7 @@ SolarSystem solarSystem = new();
 foreach (var planet in solarSystem.Planets)
 {
     Console.WriteLine($"Welcome to {planet.Name}");
+
+    RocketShip ship = new RocketShip();
+    ship.TravelTo(planet, new Astronaut());
 }
